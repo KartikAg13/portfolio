@@ -1,57 +1,14 @@
 import { JSX } from "react";
-import kartik from "./assets/me-removebg-preview-modified.png";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiKaggle } from "react-icons/si";
+
+import kartik from "./assets/Me.png";
+import hf from "./assets/hf_logo.svg";
 
 function App(): JSX.Element {
 	return (
-		// <div className="bg-gray-900 text-white flex flex-col w-svw h-svw">
-		  
-		// 	<header className="flex justify-between px-40 py-6">
-		// 		<nav>
-		// 		<ul className="flex space-x-10">
-		// 			<li className="hover:text-purple-600 cursor-pointer">About</li>
-		// 			<li className="hover:text-purple-600 cursor-pointer">Case Studies</li>
-		// 		</ul>
-		// 		</nav>
-		// 	</header>
-			
-		//   {/* Hero Section */}
-		// 	<section className="flex flex-col md:flex-row items-center w-11/12 max-w-5xl py-20 px-50">
-		// 		<div className="w-full md:w-1/2">
-		// 		<h2 className="text-8xl font-bold leading-tight">
-		// 			Kartik Agrawal,
-		// 		</h2>
-		// 		<p className="text-gray-400 mt-4">
-		// 		Kartik is a dedicated learner balancing college, DSA, and ML studies while building innovative projects. Passionate about AI and machine learning, he has honed skills in TypeScript, Python, and cloud technologies like AWS, PostgreSQL, and Docker. His problem-solving mindset and strong determination position him as a future-ready ML Engineer.
-		// 		</p>
-		// 		<p className="text-purple-600 mt-6 font-semibold">BY HARDWORK & DETERMINATION</p>
-		// 		<p className="text-gray-400">I'm currently Design Lead at <span className="text-purple-600">Adobe</span>.</p>
-		// 		</div>
-		// 		<div className="w-full md:w-1/2 relative">
-		// 		<div className="absolute inset-0 bg-purple-600 w-1/2 h-full right-0"></div>
-		// 		<img 
-		// 			src="/profile.jpg" 
-		// 			alt="Daniel Pinkman" 
-		// 			className="relative z-10 w-full object-cover"
-		// 		/>
-		// 		</div>
-		// 	</section>
-			
-		// 	{/* Awards Section */}
-		// 	<section className="text-right pr-10">
-		// 		<p className="text-gray-400">The FWA - Awards</p>
-		// 		<p className="text-gray-400">CSS Design Awards</p>
-		// 		<p className="text-gray-400">Awwwards - Website Awards</p>
-		// 	</section>
-			
-		// 	{/* Projects Section */}
-		// 	<section className="w-full text-center py-20">
-		// 		<h3 className="text-gray-400">5 most recent works</h3>
-		// 		<h2 className="text-4xl font-bold">Projects</h2>
-		// 	</section>
-		// </div>
-
-		<div className="bg-[#212025] text-white flex flex-col w-lvw h-lvh">
-			<nav className="flex flex-row fixed px-50 py-5 w-1/3 justify-between cursor-pointer text-2xl">
+		<div className="bg-[#1E1D22] text-white flex flex-col w-lvw h-lvh">
+			<nav className="flex flex-row px-50 py-5 w-1/3 justify-between cursor-pointer text-2xl">
 				<a href="#" className="hover:text-[#9D84B8]">About</a>
 				<a href="#" className="hover:text-[#9D84B8]">Projects</a>
 			</nav>
@@ -63,14 +20,28 @@ function App(): JSX.Element {
 					</div>
 
 				</div>
-				<div className="w-1/6 bg-[#9D84B8] relative overflow-visible">
-					<img 
-						src={kartik}
-						alt="Kartik"
-						className="transform scale-225 absolute bottom-44" 
-					/>
+				<div className="w-1/2 flex flex-col items-end">
+					<img src={kartik} alt="Kartik" className="w-4/7 mr-20" />
+					<div className="flex flex-row justify-evenly w-3/4">
+						<a href="https://github.com/KartikAg13" aria-label="GitHub">
+							<FaGithub size={40} />
+						</a>
+						<a href="https://www.linkedin.com/in/kartik-agrawal-410946282/" aria-label="LinkedIn">
+							<FaLinkedin size={40} />
+						</a>
+						<a href="https://www.kaggle.com/kartikag234" aria-label="Kaggle">
+							<SiKaggle size={50} />
+						</a>
+						<a href="https://huggingface.co/kartikag234" aria-label="Hugging Face">
+							<img
+							src={hf}
+							alt="Hugging Face"
+							width={40}
+							height={40}
+							/>
+						</a>
+					</div>
 				</div>
-				<div className="w-1/3"></div>
 			</div>
 		</div>
 	  );
