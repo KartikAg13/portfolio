@@ -1,6 +1,6 @@
 import { JSX } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { SiKaggle } from "react-icons/si";
+import { SiKaggle, SiGmail } from "react-icons/si";
 
 import kartik from "./assets/Me.png";
 import hf from "./assets/hf_logo.svg";
@@ -13,13 +13,13 @@ function App(): JSX.Element {
 				<a href="#" className="hover:text-[#9D84B8]">Projects</a>
 			</nav>
 			<div className="flex flex-row w-full h-full items-center">
-				<div className="w-1/2 justify-center items-center px-50">
-					<div className="mb-10">
+				<div className="w-1/2 justify-center items-center px-50 mt-[-10%]">
+					<div className="mb-10 font-semibold">
 						<h1 className="text-9xl">Kartik</h1>
 						<h1 className="text-9xl text-[#9D84B8]">Agrawal,</h1>
 					</div>
-					<div>
-						<p className="text-[#88878C] scale-110">
+					<div className="px-5">
+						<p className="text-[#ebeaee] scale-110">
 							A diligent college student from Noida, India, balancing academic pursuits with personal growth, creativity, and a passion for continuous self-improvement.
 						</p>
 					</div>
@@ -27,6 +27,13 @@ function App(): JSX.Element {
 				<div className="w-1/2 flex flex-col items-end">
 					<img src={kartik} alt="Kartik" className="w-4/7 mr-20" />
 					<div className="flex flex-row justify-evenly w-3/4">
+						<a 
+							href="mailto:kartikag.23.04@gmail.com"
+							aria-label="Gmail"
+							className="transition transform duration-500 hover:scale-125 hover:-translate-y-2"
+						>
+							<SiGmail size={40} />
+						</a>
 						<a 
 							href="https://github.com/KartikAg13" 
 							aria-label="GitHub"
