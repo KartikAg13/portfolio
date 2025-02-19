@@ -4,10 +4,11 @@ import { SiKaggle, SiGmail } from "react-icons/si";
 
 import kartik from "./assets/Me.png";
 import hf from "./assets/hf_logo.svg";
+import output from "./assets/output.png";
 
 function App(): JSX.Element {
 	return (
-		<div className="bg-[#1E1D22] text-white flex flex-col w-lvw h-lvh">
+		<div className="bg-[#1E1D22] text-white flex flex-col">
 			<nav className="flex flex-row px-50 py-5 w-1/3 justify-between cursor-pointer text-2xl">
 				<a href="#" className="hover:text-[#9D84B8]">About</a>
 				<a href="#" className="hover:text-[#9D84B8]">Projects</a>
@@ -62,6 +63,26 @@ function App(): JSX.Element {
 						>
 							<img src={hf} alt="Hugging Face" width={40} height={40} />
 						</a>
+					</div>
+				</div>
+			</div>
+			<div className="mt-25">
+				<div className="w-full h-full">
+					<h1 className="text-8xl text-center">Projets</h1>
+					<div className="flex flex-wrap justify-evenly">
+						<div className="w-80 h-100 mt-10 flex-col">
+							<div className="bg-black">
+								<img src={output} alt="Output" height={40} />
+							</div>
+							<div className="bg-red-800 h-0.5">
+								<h1>Project Name</h1>
+								<ul>
+									<li>something1</li>
+									<li>something2</li>
+									<li>something3</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
